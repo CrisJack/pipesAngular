@@ -1,0 +1,119 @@
+<div class="container text-center">
+  <h1 class="m-4">Pipes</h1>
+  <div class="row">
+    <div class="col">
+      <table class="table ">
+        <thead class="thead-dark">
+          
+          <tr>
+            
+            <th scope="col">Variables</th>
+            <th scope="col">Pipes</th>
+            <th scope="col">Producto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td>{{nombre}}</td>
+            <td>uppercase</td>
+            <td>{{nombre | uppercase}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{apellido}}</td>
+            <td>lowercase</td>
+            <td>{{apellido | lowercase}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{nombre}}</td>
+            <td>slice:2</td>
+            <td>{{nombre | slice:2}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{numeros}}</td>
+            <td>slice:1:3(Array)</td>
+            <td>{{numeros | slice:1:3}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{decimal}}</td>
+            <td>number/por defecto tres decimales</td>
+            <td>{{decimal | number}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{decimal}}</td>
+            <td>number:'1.0-2'/dos decimales</td>
+            <td>{{decimal | number:'1.0-2'}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{decimal}}</td>
+            <td>number:'2.0-2'/dos enteros</td>
+            <td>{{decimal | number:'2.0-2'}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{porcentaje}}</td>
+            <td>percent</td>
+            <td>{{porcentaje | percent}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{porcentaje}}</td>
+            <td>percent:'1.0-2'/con parametro</td>
+            <td>{{porcentaje | percent:'1.0-2'}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{dinero}}</td>
+            <td>currency/por defecto</td>
+            <td>{{dinero | currency}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{fecha}}</td>
+            <td>date</td>
+            <td>{{fecha | date}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{fecha}}</td>
+            <td>date:'medium'</td>
+            <td>{{fecha | date:'medium'}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{fecha}}</td>
+            <td>date:'MMMM - dd '</td>
+            <td>{{fecha | date:'MMMM-dd'}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{ejemplo}}</td>
+            <td>pipe personalizada</td>
+            <td>{{ejemplo | palabra}}</td>
+          </tr>
+          <tr>
+            
+            <td>{{ejemploJson}}</td>
+            <td>Json</td>
+            <td><pre>{{ejemploJson | json}}</pre></td>
+          </tr>
+          <tr>
+            
+            <td>{{prueba}}</td>
+            <td><button (click)=" cambio = !cambio ">mostrar/ocultar</button></td>
+            <td><pre >{{prueba | cambiarTipo:cambio}}</pre></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      
+      
+    </div>
+  </div>
+</div>
