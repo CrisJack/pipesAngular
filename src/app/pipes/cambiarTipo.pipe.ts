@@ -6,7 +6,11 @@ export class CambiarTipoPipe implements PipeTransform {
          
         
         if(cambio === false){
-            return '*********';
+            let text:string="";
+            for(let i=0; i<value.length;i++){
+                text+="*";
+            }
+            return text;
         }else{
             return value;
         }
